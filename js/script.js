@@ -24,3 +24,13 @@ function operate(num1, num2, operator)
 
 }
 
+const numButtons = document.querySelectorAll('button');
+
+numButtons.forEach(button => {
+    button.addEventListener('click', buttonClick);
+});
+function buttonClick(e)
+{
+    console.log(e.target.innerText);
+}
+
