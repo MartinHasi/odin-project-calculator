@@ -8,6 +8,7 @@ let operator = '';
 
 btn.forEach(button => {
     button.addEventListener('click', (e) => {
+        
         if((button.className === 'number' || button.className === 'decimal') && operator === '')
         {
             numValue1 += e.target.value;
